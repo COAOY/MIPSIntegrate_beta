@@ -3,8 +3,7 @@ python:
   - "3.6"
 # command to install dependencies
 install:
-  -pip install --progress-bar off
-  - pip install -r Simulation/run/requirements.txt
+  - pip install --progress-bar off -r Simulation/run/requirements.txt
 # command to run tests
 script:
   - py.test -q Simulation/run/test_stimuli_mapping.py
