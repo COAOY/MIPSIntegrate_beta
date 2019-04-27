@@ -3,7 +3,7 @@ python:
   - "3.6"
 # command to install dependencies
 install:
-  - pip install -r simulation/run/requirements.txt
+  - pip install -r Simulation/run/requirements.txt
 # command to run tests
 script:
-  - py.test -q simulation/run/test_stimuli_mapping.py
+  - py.test -q Simulation/run/test_stimuli_mapping.py
