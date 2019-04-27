@@ -1,0 +1,9 @@
+language: python
+python:
+  - "3.6"
+# command to install dependencies
+install:
+  - pip install -r Simulation/run/requirements.txt --progress-bar off
+# command to run tests
+script:
+  - py.test -q Simulation/run/stimuli/test_stimuli_mapping.py
