@@ -1,0 +1,33 @@
+TARGET = stimuli
+VPI = $(TARGET).vpi
+
+VENV_NAME = venv
+LDFLAGS = $(shell iverilog-vpi --ldflags) \
+		  $(shell iverilog-vpi --ldlibs) \
+		  $(shell python-config --ldflags) 
+
+CC = gcc
+CFLAGS = $(shell python-config --cflags) \
+		 $(shell iverilog-vpi --cflags) \
+		 -Wno-unused-parameter
+
+.PHONY: default all clean
+
+default: $(VPI)
+all: default
+
+.PRECIOUS: $(VPI) $(OBJECTS)
+
+OBJECTS = $(patsubst %.cc, %.o, $(wildcard *.cc))
+HEADERS = $(wildcard *.h)
+
+$(VENV_NAME): 
+	@virtualenv --python=python3.6 $(VENV_NAME)
+	@$(VENV_NAME)/bin/pip install -Ur requirements.txt
+
+%.o: %.cc $(HEADERS) $(VENV_NAME)
+	@$(CC) $(CFLAGS) -c $< -o $@
+
+$(VPI): $(OBJECTS)
+	@$(CC) $(OBJECTS) $(LDFLAGS) -o $@
+

@@ -1,0 +1,334 @@
+
+// pt2tmax
+// Version K-2015.06
+
+$path {
+  // from: div_active_reg
+  // to: hilo_reg[33]
+  $name "internal_1" ;
+  $cycle 10 ;
+  $slack 8.25274 ;
+  $launch "clk" ; // (rise edge)
+  $capture "clk" ; // (rise edge)
+  $transition {
+    "U2373/A" v ; // (INVX1)
+    "U612/B" ^ ; // (NAND3X1)
+    "U1312/A" v ; // (BUFX2)
+    "U2207/A" v ; // (INVX1)
+    "U1721/B" ^ ; // (OR2X1)
+    "U1722/A" ^ ; // (INVX1)
+    "U574/A" v ; // (NAND3X1)
+    "U1411/A" ^ ; // (BUFX2)
+    "U1204/A" ^ ; // (AND2X1)
+    "U2121/A" ^ ; // (INVX1)
+    "U2122/A" v ; // (INVX8)
+    "U555/B" ^ ; // (XOR2X1)
+    "U2044/B" ^ ; // (OR2X1)
+    "U1317/A" ^ ; // (OR2X1)
+    "U2211/A" ^ ; // (INVX1)
+    "U550/C" v ; // (NAND3X1)
+    "U1315/A" ^ ; // (BUFX2)
+    "U2210/A" ^ ; // (INVX1)
+    "U549/C" v ; // (AOI21X1)
+    "U2037/A" ^ ; // (BUFX2)
+    "U2191/A" ^ ; // (AND2X1)
+    "U2175/A" ^ ; // (INVX1)
+    "U376/B" v ; // (AOI22X1)
+    "U1690/A" ^ ; // (BUFX2)
+    "U372/A" ^ ; // (NAND3X1)
+    "U1447/A" v ; // (BUFX2)
+    "hilo_reg[33]/D" v ; // (DFFPOSX1)
+  }
+}
+
+$path {
+  // from: div_active_reg
+  // to: hilo_reg[33]
+  $name "internal_2" ;
+  $cycle 10 ;
+  $slack 8.28145 ;
+  $launch "clk" ; // (rise edge)
+  $capture "clk" ; // (rise edge)
+  $transition {
+    "U2373/A" v ; // (INVX1)
+    "U616/B" ^ ; // (NAND3X1)
+    "U1577/A" v ; // (BUFX2)
+    "U1234/A" v ; // (OR2X1)
+    "U574/B" v ; // (NAND3X1)
+    "U1411/A" ^ ; // (BUFX2)
+    "U1204/A" ^ ; // (AND2X1)
+    "U2121/A" ^ ; // (INVX1)
+    "U2122/A" v ; // (INVX8)
+    "U555/B" ^ ; // (XOR2X1)
+    "U2044/B" ^ ; // (OR2X1)
+    "U1317/A" ^ ; // (OR2X1)
+    "U2211/A" ^ ; // (INVX1)
+    "U550/C" v ; // (NAND3X1)
+    "U1315/A" ^ ; // (BUFX2)
+    "U2210/A" ^ ; // (INVX1)
+    "U549/C" v ; // (AOI21X1)
+    "U2037/A" ^ ; // (BUFX2)
+    "U2191/A" ^ ; // (AND2X1)
+    "U2175/A" ^ ; // (INVX1)
+    "U376/B" v ; // (AOI22X1)
+    "U1690/A" ^ ; // (BUFX2)
+    "U372/A" ^ ; // (NAND3X1)
+    "U1447/A" v ; // (BUFX2)
+    "hilo_reg[33]/D" v ; // (DFFPOSX1)
+  }
+}
+
+$path {
+  // from: div_active_reg
+  // to: hilo_reg[33]
+  $name "internal_3" ;
+  $cycle 10 ;
+  $slack 8.3451 ;
+  $launch "clk" ; // (rise edge)
+  $capture "clk" ; // (rise edge)
+  $transition {
+    "U2373/A" v ; // (INVX1)
+    "U612/B" ^ ; // (NAND3X1)
+    "U1312/A" v ; // (BUFX2)
+    "U2207/A" v ; // (INVX1)
+    "U1721/B" ^ ; // (OR2X1)
+    "U1722/A" ^ ; // (INVX1)
+    "U574/A" v ; // (NAND3X1)
+    "U1411/A" ^ ; // (BUFX2)
+    "U1204/A" ^ ; // (AND2X1)
+    "U2121/A" ^ ; // (INVX1)
+    "U2122/A" v ; // (INVX8)
+    "U555/B" ^ ; // (XOR2X1)
+    "U2044/B" ^ ; // (OR2X1)
+    "U1317/A" ^ ; // (OR2X1)
+    "U1345/B" ^ ; // (OR2X1)
+    "U2191/B" ^ ; // (AND2X1)
+    "U2175/A" ^ ; // (INVX1)
+    "U376/B" v ; // (AOI22X1)
+    "U1690/A" ^ ; // (BUFX2)
+    "U372/A" ^ ; // (NAND3X1)
+    "U1447/A" v ; // (BUFX2)
+    "hilo_reg[33]/D" v ; // (DFFPOSX1)
+  }
+}
+
+$path {
+  // from: div_active_reg
+  // to: hilo_reg[33]
+  $name "internal_4" ;
+  $cycle 10 ;
+  $slack 8.37381 ;
+  $launch "clk" ; // (rise edge)
+  $capture "clk" ; // (rise edge)
+  $transition {
+    "U2373/A" v ; // (INVX1)
+    "U616/B" ^ ; // (NAND3X1)
+    "U1577/A" v ; // (BUFX2)
+    "U1234/A" v ; // (OR2X1)
+    "U574/B" v ; // (NAND3X1)
+    "U1411/A" ^ ; // (BUFX2)
+    "U1204/A" ^ ; // (AND2X1)
+    "U2121/A" ^ ; // (INVX1)
+    "U2122/A" v ; // (INVX8)
+    "U555/B" ^ ; // (XOR2X1)
+    "U2044/B" ^ ; // (OR2X1)
+    "U1317/A" ^ ; // (OR2X1)
+    "U1345/B" ^ ; // (OR2X1)
+    "U2191/B" ^ ; // (AND2X1)
+    "U2175/A" ^ ; // (INVX1)
+    "U376/B" v ; // (AOI22X1)
+    "U1690/A" ^ ; // (BUFX2)
+    "U372/A" ^ ; // (NAND3X1)
+    "U1447/A" v ; // (BUFX2)
+    "hilo_reg[33]/D" v ; // (DFFPOSX1)
+  }
+}
+
+$path {
+  // from: div_active_reg
+  // to: hilo_reg[33]
+  $name "internal_5" ;
+  $cycle 10 ;
+  $slack 8.51962 ;
+  $launch "clk" ; // (rise edge)
+  $capture "clk" ; // (rise edge)
+  $transition {
+    "U2373/A" v ; // (INVX1)
+    "U612/B" ^ ; // (NAND3X1)
+    "U1312/A" v ; // (BUFX2)
+    "U2207/A" v ; // (INVX1)
+    "U1721/B" ^ ; // (OR2X1)
+    "U1722/A" ^ ; // (INVX1)
+    "U574/A" v ; // (NAND3X1)
+    "U1411/A" ^ ; // (BUFX2)
+    "U1204/A" ^ ; // (AND2X1)
+    "U2121/A" ^ ; // (INVX1)
+    "U2122/A" v ; // (INVX8)
+    "U555/B" ^ ; // (XOR2X1)
+    "U2044/B" ^ ; // (OR2X1)
+    "U1317/A" ^ ; // (OR2X1)
+    "U1344/A" ^ ; // (OR2X1)
+    "U2199/A" ^ ; // (INVX1)
+    "U374/D" v ; // (AOI22X1)
+    "U1380/A" ^ ; // (BUFX2)
+    "U1173/A" ^ ; // (AND2X1)
+    "U372/C" ^ ; // (NAND3X1)
+    "U1447/A" v ; // (BUFX2)
+    "hilo_reg[33]/D" v ; // (DFFPOSX1)
+  }
+}
+
+$path {
+  // from: div_active_reg
+  // to: hilo_reg[33]
+  $name "internal_6" ;
+  $cycle 10 ;
+  $slack 8.54833 ;
+  $launch "clk" ; // (rise edge)
+  $capture "clk" ; // (rise edge)
+  $transition {
+    "U2373/A" v ; // (INVX1)
+    "U616/B" ^ ; // (NAND3X1)
+    "U1577/A" v ; // (BUFX2)
+    "U1234/A" v ; // (OR2X1)
+    "U574/B" v ; // (NAND3X1)
+    "U1411/A" ^ ; // (BUFX2)
+    "U1204/A" ^ ; // (AND2X1)
+    "U2121/A" ^ ; // (INVX1)
+    "U2122/A" v ; // (INVX8)
+    "U555/B" ^ ; // (XOR2X1)
+    "U2044/B" ^ ; // (OR2X1)
+    "U1317/A" ^ ; // (OR2X1)
+    "U1344/A" ^ ; // (OR2X1)
+    "U2199/A" ^ ; // (INVX1)
+    "U374/D" v ; // (AOI22X1)
+    "U1380/A" ^ ; // (BUFX2)
+    "U1173/A" ^ ; // (AND2X1)
+    "U372/C" ^ ; // (NAND3X1)
+    "U1447/A" v ; // (BUFX2)
+    "hilo_reg[33]/D" v ; // (DFFPOSX1)
+  }
+}
+
+$path {
+  // from: div_active_reg
+  // to: hilo_reg[33]
+  $name "internal_7" ;
+  $cycle 10 ;
+  $slack 8.59337 ;
+  $launch "clk" ; // (rise edge)
+  $capture "clk" ; // (rise edge)
+  $transition {
+    "U2373/A" v ; // (INVX1)
+    "U612/B" ^ ; // (NAND3X1)
+    "U1312/A" v ; // (BUFX2)
+    "U2207/A" v ; // (INVX1)
+    "U1721/B" ^ ; // (OR2X1)
+    "U1722/A" ^ ; // (INVX1)
+    "U574/A" v ; // (NAND3X1)
+    "U1411/A" ^ ; // (BUFX2)
+    "U1204/A" ^ ; // (AND2X1)
+    "U2121/A" ^ ; // (INVX1)
+    "U2122/A" v ; // (INVX8)
+    "U555/B" ^ ; // (XOR2X1)
+    "U2044/B" v ; // (OR2X1)
+    "U1317/A" v ; // (OR2X1)
+    "U543/A" v ; // (NAND3X1)
+    "U1316/A" ^ ; // (BUFX2)
+    "U2193/A" ^ ; // (INVX1)
+    "U1900/B" v ; // (AND2X1)
+    "U1901/A" v ; // (INVX1)
+    "U372/B" ^ ; // (NAND3X1)
+    "U1447/A" v ; // (BUFX2)
+    "hilo_reg[33]/D" v ; // (DFFPOSX1)
+  }
+}
+
+$path {
+  // from: div_active_reg
+  // to: hilo_reg[33]
+  $name "internal_8" ;
+  $cycle 10 ;
+  $slack 8.62208 ;
+  $launch "clk" ; // (rise edge)
+  $capture "clk" ; // (rise edge)
+  $transition {
+    "U2373/A" v ; // (INVX1)
+    "U616/B" ^ ; // (NAND3X1)
+    "U1577/A" v ; // (BUFX2)
+    "U1234/A" v ; // (OR2X1)
+    "U574/B" v ; // (NAND3X1)
+    "U1411/A" ^ ; // (BUFX2)
+    "U1204/A" ^ ; // (AND2X1)
+    "U2121/A" ^ ; // (INVX1)
+    "U2122/A" v ; // (INVX8)
+    "U555/B" ^ ; // (XOR2X1)
+    "U2044/B" v ; // (OR2X1)
+    "U1317/A" v ; // (OR2X1)
+    "U543/A" v ; // (NAND3X1)
+    "U1316/A" ^ ; // (BUFX2)
+    "U2193/A" ^ ; // (INVX1)
+    "U1900/B" v ; // (AND2X1)
+    "U1901/A" v ; // (INVX1)
+    "U372/B" ^ ; // (NAND3X1)
+    "U1447/A" v ; // (BUFX2)
+    "hilo_reg[33]/D" v ; // (DFFPOSX1)
+  }
+}
+
+$path {
+  // from: div_active_reg
+  // to: hilo_reg[33]
+  $name "internal_9" ;
+  $cycle 10 ;
+  $slack 8.98954 ;
+  $launch "clk" ; // (rise edge)
+  $capture "clk" ; // (rise edge)
+  $transition {
+    "U2373/A" ^ ; // (INVX1)
+    "U2375/A" v ; // (OR2X1)
+    "U553/A" v ; // (NAND3X1)
+    "U2035/A" ^ ; // (BUFX2)
+    "U2222/A" ^ ; // (INVX1)
+    "U2220/A" v ; // (AND2X1)
+    "U2201/A" v ; // (INVX1)
+    "U2187/A" ^ ; // (INVX1)
+    "U373/B" v ; // (AOI22X1)
+    "U1511/A" ^ ; // (BUFX2)
+    "U1173/B" ^ ; // (AND2X1)
+    "U372/C" ^ ; // (NAND3X1)
+    "U1447/A" v ; // (BUFX2)
+    "hilo_reg[33]/D" v ; // (DFFPOSX1)
+  }
+}
+
+$path {
+  // from: div_active_reg
+  // to: hilo_reg[33]
+  $name "internal_10" ;
+  $cycle 10 ;
+  $slack 8.99365 ;
+  $launch "clk" ; // (rise edge)
+  $capture "clk" ; // (rise edge)
+  $transition {
+    "U2373/A" ^ ; // (INVX1)
+    "U2375/A" v ; // (OR2X1)
+    "U2046/A" v ; // (INVX1)
+    "U1318/B" ^ ; // (OR2X1)
+    "U1317/B" ^ ; // (OR2X1)
+    "U2211/A" ^ ; // (INVX1)
+    "U550/C" v ; // (NAND3X1)
+    "U1315/A" ^ ; // (BUFX2)
+    "U2210/A" ^ ; // (INVX1)
+    "U549/C" v ; // (AOI21X1)
+    "U2037/A" ^ ; // (BUFX2)
+    "U2191/A" ^ ; // (AND2X1)
+    "U2175/A" ^ ; // (INVX1)
+    "U376/B" v ; // (AOI22X1)
+    "U1690/A" ^ ; // (BUFX2)
+    "U372/A" ^ ; // (NAND3X1)
+    "U1447/A" v ; // (BUFX2)
+    "hilo_reg[33]/D" v ; // (DFFPOSX1)
+  }
+}
+

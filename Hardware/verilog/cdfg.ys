@@ -1,0 +1,31 @@
+read_verilog ./antares_hazard_unit.v
+read_verilog ./antares_pc_register.v
+read_verilog ./antares_idex_register.v
+read_verilog ./antares_control_unit.v
+read_verilog ./antares_load_store_unit.v
+read_verilog ./antares_add.v
+read_verilog ./antares_shifter.v
+read_verilog ./antares_divider.v
+read_verilog ./antares_core.v
+read_verilog ./antares_branch_unit.v
+read_verilog ./antares_alu.v
+read_verilog ./antares_multiplier.v
+read_verilog ./antares_exmem_register.v
+read_verilog ./antares_ifid_register.v
+read_verilog ./antares_cloz.v
+read_verilog ./antares_mux_2_1.v
+read_verilog ./antares_memwb_register.v
+read_verilog ./antares_mux_4_1.v
+read_verilog ./antares_reg_file.v 
+read_verilog ./antares_cpzero.v 
+read_verilog ./antares_defines.v 
+
+hierarchy -top antares_core
+
+proc; opt; memory -nomap; opt; 
+flatten; opt 
+cd antares_core
+
+cdfg -max_paths 64 -v  
+
+# shell 

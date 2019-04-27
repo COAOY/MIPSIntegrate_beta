@@ -1,0 +1,8 @@
+#/**************************************************/
+#/* Setup Script for Synopsys DC                   */
+#/*                                                */
+#/* OSU FreePDK 45nm                               */
+#/**************************************************/
+
+set search_path [concat  [list . /home/raid7_2/course/cvsd/CBDK_IC_Contest/CIC/SynopsysDC/db/ .] $search_path]
+set link_path "* typical.db fast.db slow.db" 

@@ -1,0 +1,767 @@
+STIL 1.0 {
+    Design 2005;
+}
+Header {
+    Title "Minimal STIL for design `antares_core'";
+    Date "Mon Dec  3 20:22:55 2018";
+    Source "DFT Compiler N-2017.09-SP2";
+}
+Signals {
+    "clk" In;
+    "dport_data_i[0]" In;
+    "dport_data_i[10]" In;
+    "dport_data_i[11]" In;
+    "dport_data_i[12]" In;
+    "dport_data_i[13]" In;
+    "dport_data_i[14]" In;
+    "dport_data_i[15]" In;
+    "dport_data_i[16]" In;
+    "dport_data_i[17]" In;
+    "dport_data_i[18]" In;
+    "dport_data_i[19]" In;
+    "dport_data_i[1]" In;
+    "dport_data_i[20]" In;
+    "dport_data_i[21]" In;
+    "dport_data_i[22]" In;
+    "dport_data_i[23]" In;
+    "dport_data_i[24]" In;
+    "dport_data_i[25]" In;
+    "dport_data_i[26]" In;
+    "dport_data_i[27]" In;
+    "dport_data_i[28]" In;
+    "dport_data_i[29]" In;
+    "dport_data_i[2]" In;
+    "dport_data_i[30]" In;
+    "dport_data_i[31]" In;
+    "dport_data_i[3]" In;
+    "dport_data_i[4]" In;
+    "dport_data_i[5]" In;
+    "dport_data_i[6]" In;
+    "dport_data_i[7]" In;
+    "dport_data_i[8]" In;
+    "dport_data_i[9]" In;
+    "dport_error" In;
+    "dport_ready" In;
+    "interrupts[0]" In;
+    "interrupts[1]" In;
+    "interrupts[2]" In;
+    "interrupts[3]" In;
+    "interrupts[4]" In;
+    "iport_data_i[0]" In;
+    "iport_data_i[10]" In;
+    "iport_data_i[11]" In;
+    "iport_data_i[12]" In;
+    "iport_data_i[13]" In;
+    "iport_data_i[14]" In;
+    "iport_data_i[15]" In;
+    "iport_data_i[16]" In;
+    "iport_data_i[17]" In;
+    "iport_data_i[18]" In;
+    "iport_data_i[19]" In;
+    "iport_data_i[1]" In;
+    "iport_data_i[20]" In;
+    "iport_data_i[21]" In;
+    "iport_data_i[22]" In;
+    "iport_data_i[23]" In;
+    "iport_data_i[24]" In;
+    "iport_data_i[25]" In;
+    "iport_data_i[26]" In;
+    "iport_data_i[27]" In;
+    "iport_data_i[28]" In;
+    "iport_data_i[29]" In;
+    "iport_data_i[2]" In;
+    "iport_data_i[30]" In;
+    "iport_data_i[31]" In;
+    "iport_data_i[3]" In;
+    "iport_data_i[4]" In;
+    "iport_data_i[5]" In;
+    "iport_data_i[6]" In;
+    "iport_data_i[7]" In;
+    "iport_data_i[8]" In;
+    "iport_data_i[9]" In;
+    "iport_error" In;
+    "iport_ready" In;
+    "nmi" In;
+    "rst" In;
+    "dport_address[0]" Out;
+    "dport_address[10]" Out;
+    "dport_address[11]" Out;
+    "dport_address[12]" Out;
+    "dport_address[13]" Out;
+    "dport_address[14]" Out;
+    "dport_address[15]" Out;
+    "dport_address[16]" Out;
+    "dport_address[17]" Out;
+    "dport_address[18]" Out;
+    "dport_address[19]" Out;
+    "dport_address[1]" Out;
+    "dport_address[20]" Out;
+    "dport_address[21]" Out;
+    "dport_address[22]" Out;
+    "dport_address[23]" Out;
+    "dport_address[24]" Out;
+    "dport_address[25]" Out;
+    "dport_address[26]" Out;
+    "dport_address[27]" Out;
+    "dport_address[28]" Out;
+    "dport_address[29]" Out;
+    "dport_address[2]" Out;
+    "dport_address[30]" Out;
+    "dport_address[31]" Out;
+    "dport_address[3]" Out;
+    "dport_address[4]" Out;
+    "dport_address[5]" Out;
+    "dport_address[6]" Out;
+    "dport_address[7]" Out;
+    "dport_address[8]" Out;
+    "dport_address[9]" Out;
+    "dport_data_o[0]" Out;
+    "dport_data_o[10]" Out;
+    "dport_data_o[11]" Out;
+    "dport_data_o[12]" Out;
+    "dport_data_o[13]" Out;
+    "dport_data_o[14]" Out;
+    "dport_data_o[15]" Out;
+    "dport_data_o[16]" Out;
+    "dport_data_o[17]" Out;
+    "dport_data_o[18]" Out;
+    "dport_data_o[19]" Out;
+    "dport_data_o[1]" Out;
+    "dport_data_o[20]" Out;
+    "dport_data_o[21]" Out;
+    "dport_data_o[22]" Out;
+    "dport_data_o[23]" Out;
+    "dport_data_o[24]" Out;
+    "dport_data_o[25]" Out;
+    "dport_data_o[26]" Out;
+    "dport_data_o[27]" Out;
+    "dport_data_o[28]" Out;
+    "dport_data_o[29]" Out;
+    "dport_data_o[2]" Out;
+    "dport_data_o[30]" Out;
+    "dport_data_o[31]" Out;
+    "dport_data_o[3]" Out;
+    "dport_data_o[4]" Out;
+    "dport_data_o[5]" Out;
+    "dport_data_o[6]" Out;
+    "dport_data_o[7]" Out;
+    "dport_data_o[8]" Out;
+    "dport_data_o[9]" Out;
+    "dport_enable" Out;
+    "dport_wr[0]" Out;
+    "dport_wr[1]" Out;
+    "dport_wr[2]" Out;
+    "dport_wr[3]" Out;
+    "halted" Out;
+    "iport_address[0]" Out;
+    "iport_address[10]" Out;
+    "iport_address[11]" Out;
+    "iport_address[12]" Out;
+    "iport_address[13]" Out;
+    "iport_address[14]" Out;
+    "iport_address[15]" Out;
+    "iport_address[16]" Out;
+    "iport_address[17]" Out;
+    "iport_address[18]" Out;
+    "iport_address[19]" Out;
+    "iport_address[1]" Out;
+    "iport_address[20]" Out;
+    "iport_address[21]" Out;
+    "iport_address[22]" Out;
+    "iport_address[23]" Out;
+    "iport_address[24]" Out;
+    "iport_address[25]" Out;
+    "iport_address[26]" Out;
+    "iport_address[27]" Out;
+    "iport_address[28]" Out;
+    "iport_address[29]" Out;
+    "iport_address[2]" Out;
+    "iport_address[30]" Out;
+    "iport_address[31]" Out;
+    "iport_address[3]" Out;
+    "iport_address[4]" Out;
+    "iport_address[5]" Out;
+    "iport_address[6]" Out;
+    "iport_address[7]" Out;
+    "iport_address[8]" Out;
+    "iport_address[9]" Out;
+    "iport_enable" Out;
+    "iport_wr[0]" Out;
+    "iport_wr[1]" Out;
+    "iport_wr[2]" Out;
+    "iport_wr[3]" Out;
+    "test_si1" In;
+    "test_so1" Out;
+    "test_si2" In;
+    "test_so2" Out;
+    "test_si3" In;
+    "test_so3" Out;
+    "test_si4" In;
+    "test_so4" Out;
+    "test_si5" In;
+    "test_so5" Out;
+    "test_si6" In;
+    "test_so6" Out;
+    "test_si7" In;
+    "test_so7" Out;
+    "test_si8" In;
+    "test_so8" Out;
+    "test_se" In;
+}
+SignalGroups {
+    "_si" = '"test_si1" + "test_si2" + "test_si3" + "test_si4" + "test_si5" + 
+    "test_si6" + "test_si7" + "test_si8"' {
+        ScanIn;
+    }
+    "_so" = '"test_so1" + "test_so2" + "test_so3" + "test_so4" + "test_so5" + 
+    "test_so6" + "test_so7" + "test_so8"' {
+        ScanOut;
+    }
+    "_clk" = '"clk"';
+    "all_inputs" = '"clk" + "dport_data_i[0]" + "dport_data_i[10]" + 
+    "dport_data_i[11]" + "dport_data_i[12]" + "dport_data_i[13]" + 
+    "dport_data_i[14]" + "dport_data_i[15]" + "dport_data_i[16]" + 
+    "dport_data_i[17]" + "dport_data_i[18]" + "dport_data_i[19]" + 
+    "dport_data_i[1]" + "dport_data_i[20]" + "dport_data_i[21]" + 
+    "dport_data_i[22]" + "dport_data_i[23]" + "dport_data_i[24]" + 
+    "dport_data_i[25]" + "dport_data_i[26]" + "dport_data_i[27]" + 
+    "dport_data_i[28]" + "dport_data_i[29]" + "dport_data_i[2]" + 
+    "dport_data_i[30]" + "dport_data_i[31]" + "dport_data_i[3]" + 
+    "dport_data_i[4]" + "dport_data_i[5]" + "dport_data_i[6]" + 
+    "dport_data_i[7]" + "dport_data_i[8]" + "dport_data_i[9]" + "dport_error" + 
+    "dport_ready" + "interrupts[0]" + "interrupts[1]" + "interrupts[2]" + 
+    "interrupts[3]" + "interrupts[4]" + "iport_data_i[0]" + "iport_data_i[10]" + 
+    "iport_data_i[11]" + "iport_data_i[12]" + "iport_data_i[13]" + 
+    "iport_data_i[14]" + "iport_data_i[15]" + "iport_data_i[16]" + 
+    "iport_data_i[17]" + "iport_data_i[18]" + "iport_data_i[19]" + 
+    "iport_data_i[1]" + "iport_data_i[20]" + "iport_data_i[21]" + 
+    "iport_data_i[22]" + "iport_data_i[23]" + "iport_data_i[24]" + 
+    "iport_data_i[25]" + "iport_data_i[26]" + "iport_data_i[27]" + 
+    "iport_data_i[28]" + "iport_data_i[29]" + "iport_data_i[2]" + 
+    "iport_data_i[30]" + "iport_data_i[31]" + "iport_data_i[3]" + 
+    "iport_data_i[4]" + "iport_data_i[5]" + "iport_data_i[6]" + 
+    "iport_data_i[7]" + "iport_data_i[8]" + "iport_data_i[9]" + "iport_error" + 
+    "iport_ready" + "nmi" + "rst" + "test_si1" + "test_si2" + "test_si3" + 
+    "test_si4" + "test_si5" + "test_si6" + "test_si7" + "test_si8" + "test_se"';
+    "all_outputs" = '"dport_address[0]" + "dport_address[10]" + 
+    "dport_address[11]" + "dport_address[12]" + "dport_address[13]" + 
+    "dport_address[14]" + "dport_address[15]" + "dport_address[16]" + 
+    "dport_address[17]" + "dport_address[18]" + "dport_address[19]" + 
+    "dport_address[1]" + "dport_address[20]" + "dport_address[21]" + 
+    "dport_address[22]" + "dport_address[23]" + "dport_address[24]" + 
+    "dport_address[25]" + "dport_address[26]" + "dport_address[27]" + 
+    "dport_address[28]" + "dport_address[29]" + "dport_address[2]" + 
+    "dport_address[30]" + "dport_address[31]" + "dport_address[3]" + 
+    "dport_address[4]" + "dport_address[5]" + "dport_address[6]" + 
+    "dport_address[7]" + "dport_address[8]" + "dport_address[9]" + 
+    "dport_data_o[0]" + "dport_data_o[10]" + "dport_data_o[11]" + 
+    "dport_data_o[12]" + "dport_data_o[13]" + "dport_data_o[14]" + 
+    "dport_data_o[15]" + "dport_data_o[16]" + "dport_data_o[17]" + 
+    "dport_data_o[18]" + "dport_data_o[19]" + "dport_data_o[1]" + 
+    "dport_data_o[20]" + "dport_data_o[21]" + "dport_data_o[22]" + 
+    "dport_data_o[23]" + "dport_data_o[24]" + "dport_data_o[25]" + 
+    "dport_data_o[26]" + "dport_data_o[27]" + "dport_data_o[28]" + 
+    "dport_data_o[29]" + "dport_data_o[2]" + "dport_data_o[30]" + 
+    "dport_data_o[31]" + "dport_data_o[3]" + "dport_data_o[4]" + 
+    "dport_data_o[5]" + "dport_data_o[6]" + "dport_data_o[7]" + 
+    "dport_data_o[8]" + "dport_data_o[9]" + "dport_enable" + "dport_wr[0]" + 
+    "dport_wr[1]" + "dport_wr[2]" + "dport_wr[3]" + "halted" + 
+    "iport_address[0]" + "iport_address[10]" + "iport_address[11]" + 
+    "iport_address[12]" + "iport_address[13]" + "iport_address[14]" + 
+    "iport_address[15]" + "iport_address[16]" + "iport_address[17]" + 
+    "iport_address[18]" + "iport_address[19]" + "iport_address[1]" + 
+    "iport_address[20]" + "iport_address[21]" + "iport_address[22]" + 
+    "iport_address[23]" + "iport_address[24]" + "iport_address[25]" + 
+    "iport_address[26]" + "iport_address[27]" + "iport_address[28]" + 
+    "iport_address[29]" + "iport_address[2]" + "iport_address[30]" + 
+    "iport_address[31]" + "iport_address[3]" + "iport_address[4]" + 
+    "iport_address[5]" + "iport_address[6]" + "iport_address[7]" + 
+    "iport_address[8]" + "iport_address[9]" + "iport_enable" + "iport_wr[0]" + 
+    "iport_wr[1]" + "iport_wr[2]" + "iport_wr[3]" + "test_so1" + "test_so2" + 
+    "test_so3" + "test_so4" + "test_so5" + "test_so6" + "test_so7" + "test_so8"'
+    ;
+    "all_ports" = '"all_inputs" + "all_outputs"';
+    "_pi" = '"clk" + "dport_data_i[0]" + "dport_data_i[10]" + "dport_data_i[11]" 
+    + "dport_data_i[12]" + "dport_data_i[13]" + "dport_data_i[14]" + 
+    "dport_data_i[15]" + "dport_data_i[16]" + "dport_data_i[17]" + 
+    "dport_data_i[18]" + "dport_data_i[19]" + "dport_data_i[1]" + 
+    "dport_data_i[20]" + "dport_data_i[21]" + "dport_data_i[22]" + 
+    "dport_data_i[23]" + "dport_data_i[24]" + "dport_data_i[25]" + 
+    "dport_data_i[26]" + "dport_data_i[27]" + "dport_data_i[28]" + 
+    "dport_data_i[29]" + "dport_data_i[2]" + "dport_data_i[30]" + 
+    "dport_data_i[31]" + "dport_data_i[3]" + "dport_data_i[4]" + 
+    "dport_data_i[5]" + "dport_data_i[6]" + "dport_data_i[7]" + 
+    "dport_data_i[8]" + "dport_data_i[9]" + "dport_error" + "dport_ready" + 
+    "interrupts[0]" + "interrupts[1]" + "interrupts[2]" + "interrupts[3]" + 
+    "interrupts[4]" + "iport_data_i[0]" + "iport_data_i[10]" + 
+    "iport_data_i[11]" + "iport_data_i[12]" + "iport_data_i[13]" + 
+    "iport_data_i[14]" + "iport_data_i[15]" + "iport_data_i[16]" + 
+    "iport_data_i[17]" + "iport_data_i[18]" + "iport_data_i[19]" + 
+    "iport_data_i[1]" + "iport_data_i[20]" + "iport_data_i[21]" + 
+    "iport_data_i[22]" + "iport_data_i[23]" + "iport_data_i[24]" + 
+    "iport_data_i[25]" + "iport_data_i[26]" + "iport_data_i[27]" + 
+    "iport_data_i[28]" + "iport_data_i[29]" + "iport_data_i[2]" + 
+    "iport_data_i[30]" + "iport_data_i[31]" + "iport_data_i[3]" + 
+    "iport_data_i[4]" + "iport_data_i[5]" + "iport_data_i[6]" + 
+    "iport_data_i[7]" + "iport_data_i[8]" + "iport_data_i[9]" + "iport_error" + 
+    "iport_ready" + "nmi" + "rst" + "test_si1" + "test_si2" + "test_si3" + 
+    "test_si4" + "test_si5" + "test_si6" + "test_si7" + "test_si8" + "test_se"';
+    "_po" = '"dport_address[0]" + "dport_address[10]" + "dport_address[11]" + 
+    "dport_address[12]" + "dport_address[13]" + "dport_address[14]" + 
+    "dport_address[15]" + "dport_address[16]" + "dport_address[17]" + 
+    "dport_address[18]" + "dport_address[19]" + "dport_address[1]" + 
+    "dport_address[20]" + "dport_address[21]" + "dport_address[22]" + 
+    "dport_address[23]" + "dport_address[24]" + "dport_address[25]" + 
+    "dport_address[26]" + "dport_address[27]" + "dport_address[28]" + 
+    "dport_address[29]" + "dport_address[2]" + "dport_address[30]" + 
+    "dport_address[31]" + "dport_address[3]" + "dport_address[4]" + 
+    "dport_address[5]" + "dport_address[6]" + "dport_address[7]" + 
+    "dport_address[8]" + "dport_address[9]" + "dport_data_o[0]" + 
+    "dport_data_o[10]" + "dport_data_o[11]" + "dport_data_o[12]" + 
+    "dport_data_o[13]" + "dport_data_o[14]" + "dport_data_o[15]" + 
+    "dport_data_o[16]" + "dport_data_o[17]" + "dport_data_o[18]" + 
+    "dport_data_o[19]" + "dport_data_o[1]" + "dport_data_o[20]" + 
+    "dport_data_o[21]" + "dport_data_o[22]" + "dport_data_o[23]" + 
+    "dport_data_o[24]" + "dport_data_o[25]" + "dport_data_o[26]" + 
+    "dport_data_o[27]" + "dport_data_o[28]" + "dport_data_o[29]" + 
+    "dport_data_o[2]" + "dport_data_o[30]" + "dport_data_o[31]" + 
+    "dport_data_o[3]" + "dport_data_o[4]" + "dport_data_o[5]" + 
+    "dport_data_o[6]" + "dport_data_o[7]" + "dport_data_o[8]" + 
+    "dport_data_o[9]" + "dport_enable" + "dport_wr[0]" + "dport_wr[1]" + 
+    "dport_wr[2]" + "dport_wr[3]" + "halted" + "iport_address[0]" + 
+    "iport_address[10]" + "iport_address[11]" + "iport_address[12]" + 
+    "iport_address[13]" + "iport_address[14]" + "iport_address[15]" + 
+    "iport_address[16]" + "iport_address[17]" + "iport_address[18]" + 
+    "iport_address[19]" + "iport_address[1]" + "iport_address[20]" + 
+    "iport_address[21]" + "iport_address[22]" + "iport_address[23]" + 
+    "iport_address[24]" + "iport_address[25]" + "iport_address[26]" + 
+    "iport_address[27]" + "iport_address[28]" + "iport_address[29]" + 
+    "iport_address[2]" + "iport_address[30]" + "iport_address[31]" + 
+    "iport_address[3]" + "iport_address[4]" + "iport_address[5]" + 
+    "iport_address[6]" + "iport_address[7]" + "iport_address[8]" + 
+    "iport_address[9]" + "iport_enable" + "iport_wr[0]" + "iport_wr[1]" + 
+    "iport_wr[2]" + "iport_wr[3]" + "test_so1" + "test_so2" + "test_so3" + 
+    "test_so4" + "test_so5" + "test_so6" + "test_so7" + "test_so8"';
+}
+ScanStructures {
+    ScanChain "1" {
+        ScanLength 110;
+        ScanIn "test_si1";
+        ScanOut "test_so1";
+        ScanEnable "test_se";
+        ScanMasterClock "clk";
+    }
+    ScanChain "2" {
+        ScanLength 110;
+        ScanIn "test_si2";
+        ScanOut "test_so2";
+        ScanEnable "test_se";
+        ScanMasterClock "clk";
+        ScanInversion 1;
+    }
+    ScanChain "3" {
+        ScanLength 109;
+        ScanIn "test_si3";
+        ScanOut "test_so3";
+        ScanEnable "test_se";
+        ScanMasterClock "clk";
+        ScanInversion 1;
+    }
+    ScanChain "4" {
+        ScanLength 109;
+        ScanIn "test_si4";
+        ScanOut "test_so4";
+        ScanEnable "test_se";
+        ScanMasterClock "clk";
+        ScanInversion 1;
+    }
+    ScanChain "5" {
+        ScanLength 109;
+        ScanIn "test_si5";
+        ScanOut "test_so5";
+        ScanEnable "test_se";
+        ScanMasterClock "clk";
+    }
+    ScanChain "6" {
+        ScanLength 109;
+        ScanIn "test_si6";
+        ScanOut "test_so6";
+        ScanEnable "test_se";
+        ScanMasterClock "clk";
+        ScanInversion 1;
+    }
+    ScanChain "7" {
+        ScanLength 109;
+        ScanIn "test_si7";
+        ScanOut "test_so7";
+        ScanEnable "test_se";
+        ScanMasterClock "clk";
+    }
+    ScanChain "8" {
+        ScanLength 109;
+        ScanIn "test_si8";
+        ScanOut "test_so8";
+        ScanEnable "test_se";
+        ScanMasterClock "clk";
+    }
+}
+Timing {
+    WaveformTable "_default_WFT_" {
+        Period '100ns';
+        Waveforms {
+            "all_inputs" {
+                0 {
+                    '0ns' D;
+                }
+            }
+            "all_inputs" {
+                1 {
+                    '0ns' U;
+                }
+            }
+            "all_inputs" {
+                Z {
+                    '0ns' Z;
+                }
+            }
+            "all_inputs" {
+                N {
+                    '0ns' N;
+                }
+            }
+            "all_outputs" {
+                X {
+                    '0ns' X;
+                    '40ns' X;
+                }
+            }
+            "all_outputs" {
+                H {
+                    '0ns' X;
+                    '40ns' H;
+                }
+            }
+            "all_outputs" {
+                T {
+                    '0ns' X;
+                    '40ns' T;
+                }
+            }
+            "all_outputs" {
+                L {
+                    '0ns' X;
+                    '40ns' L;
+                }
+            }
+            "clk" {
+                P {
+                    '0ns' D;
+                    '45ns' U;
+                    '55ns' D;
+                }
+            }
+        }
+    }
+    WaveformTable "_multiclock_capture_WFT_" {
+        Period '100ns';
+        Waveforms {
+            "all_inputs" {
+                0 {
+                    '0ns' D;
+                }
+            }
+            "all_inputs" {
+                1 {
+                    '0ns' U;
+                }
+            }
+            "all_inputs" {
+                Z {
+                    '0ns' Z;
+                }
+            }
+            "all_inputs" {
+                N {
+                    '0ns' N;
+                }
+            }
+            "all_outputs" {
+                X {
+                    '0ns' X;
+                    '40ns' X;
+                }
+            }
+            "all_outputs" {
+                H {
+                    '0ns' X;
+                    '40ns' H;
+                }
+            }
+            "all_outputs" {
+                T {
+                    '0ns' X;
+                    '40ns' T;
+                }
+            }
+            "all_outputs" {
+                L {
+                    '0ns' X;
+                    '40ns' L;
+                }
+            }
+            "clk" {
+                P {
+                    '0ns' D;
+                    '45ns' U;
+                    '55ns' D;
+                }
+            }
+        }
+    }
+    WaveformTable "_allclock_capture_WFT_" {
+        Period '100ns';
+        Waveforms {
+            "all_inputs" {
+                0 {
+                    '0ns' D;
+                }
+            }
+            "all_inputs" {
+                1 {
+                    '0ns' U;
+                }
+            }
+            "all_inputs" {
+                Z {
+                    '0ns' Z;
+                }
+            }
+            "all_inputs" {
+                N {
+                    '0ns' N;
+                }
+            }
+            "all_outputs" {
+                X {
+                    '0ns' X;
+                    '40ns' X;
+                }
+            }
+            "all_outputs" {
+                H {
+                    '0ns' X;
+                    '40ns' H;
+                }
+            }
+            "all_outputs" {
+                T {
+                    '0ns' X;
+                    '40ns' T;
+                }
+            }
+            "all_outputs" {
+                L {
+                    '0ns' X;
+                    '40ns' L;
+                }
+            }
+            "clk" {
+                P {
+                    '0ns' D;
+                    '45ns' U;
+                    '55ns' D;
+                }
+            }
+        }
+    }
+    WaveformTable "_allclock_launch_WFT_" {
+        Period '100ns';
+        Waveforms {
+            "all_inputs" {
+                0 {
+                    '0ns' D;
+                }
+            }
+            "all_inputs" {
+                1 {
+                    '0ns' U;
+                }
+            }
+            "all_inputs" {
+                Z {
+                    '0ns' Z;
+                }
+            }
+            "all_inputs" {
+                N {
+                    '0ns' N;
+                }
+            }
+            "all_outputs" {
+                X {
+                    '0ns' X;
+                    '40ns' X;
+                }
+            }
+            "all_outputs" {
+                H {
+                    '0ns' X;
+                    '40ns' H;
+                }
+            }
+            "all_outputs" {
+                T {
+                    '0ns' X;
+                    '40ns' T;
+                }
+            }
+            "all_outputs" {
+                L {
+                    '0ns' X;
+                    '40ns' L;
+                }
+            }
+            "clk" {
+                P {
+                    '0ns' D;
+                    '45ns' U;
+                    '55ns' D;
+                }
+            }
+        }
+    }
+    WaveformTable "_allclock_launch_capture_WFT_" {
+        Period '100ns';
+        Waveforms {
+            "all_inputs" {
+                0 {
+                    '0ns' D;
+                }
+            }
+            "all_inputs" {
+                1 {
+                    '0ns' U;
+                }
+            }
+            "all_inputs" {
+                Z {
+                    '0ns' Z;
+                }
+            }
+            "all_inputs" {
+                N {
+                    '0ns' N;
+                }
+            }
+            "all_outputs" {
+                X {
+                    '0ns' X;
+                    '40ns' X;
+                }
+            }
+            "all_outputs" {
+                H {
+                    '0ns' X;
+                    '40ns' H;
+                }
+            }
+            "all_outputs" {
+                T {
+                    '0ns' X;
+                    '40ns' T;
+                }
+            }
+            "all_outputs" {
+                L {
+                    '0ns' X;
+                    '40ns' L;
+                }
+            }
+            "clk" {
+                P {
+                    '0ns' D;
+                    '45ns' U;
+                    '55ns' D;
+                }
+            }
+        }
+    }
+}
+Procedures {
+    "multiclock_capture" {
+        W "_multiclock_capture_WFT_";
+        C {
+            "all_inputs" = 0 \r84 N;
+            "all_outputs" = \r115 X;
+        }
+        V {
+            "_pi" = \r85 #;
+            "_po" = \r115 #;
+        }
+    }
+    "allclock_capture" {
+        W "_allclock_capture_WFT_";
+        C {
+            "all_inputs" = 0 \r84 N;
+            "all_outputs" = \r115 X;
+        }
+        V {
+            "_pi" = \r85 #;
+            "_po" = \r115 #;
+        }
+    }
+    "allclock_launch" {
+        W "_allclock_launch_WFT_";
+        C {
+            "all_inputs" = 0 \r84 N;
+            "all_outputs" = \r115 X;
+        }
+        V {
+            "_pi" = \r85 #;
+            "_po" = \r115 #;
+        }
+    }
+    "allclock_launch_capture" {
+        W "_allclock_launch_capture_WFT_";
+        C {
+            "all_inputs" = 0 \r84 N;
+            "all_outputs" = \r115 X;
+        }
+        V {
+            "_pi" = \r85 #;
+            "_po" = \r115 #;
+        }
+    }
+    "load_unload" {
+        W "_default_WFT_";
+        C {
+            "all_inputs" = 0 \r84 N;
+            "all_outputs" = \r115 X;
+        }
+        "Internal_scan_pre_shift" : V {
+            "test_se" = 1;
+        }
+        Shift {
+            V {
+                "_clk" = P;
+                "_si" = \r8 #;
+                "_so" = \r8 #;
+            }
+        }
+    }
+}
+MacroDefs {
+    "test_setup" {
+        W "_default_WFT_";
+        C {
+            "all_inputs" = \r85 N;
+            "all_outputs" = \r115 X;
+        }
+        V {
+            "clk" = 0;
+        }
+        V {
+        }
+    }
+}
+

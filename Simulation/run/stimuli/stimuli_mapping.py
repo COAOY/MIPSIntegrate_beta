@@ -1,0 +1,106 @@
+from bitarray import bitarray 
+
+ALU_OP_N            = 32
+
+OP_TYPE_R           = bitarray('000000') 
+OP_TYPE_R2          = bitarray('011100')          
+OP_TYPE_REGIMM      = bitarray('000001')
+
+ANTARES_INSTR_OPCODE= slice(31, 25, -1) 
+ANTARES_INSTR_RS    = slice(25, 20, -1) 
+ANTARES_INSTR_RT    = slice(20, 15, -1)
+ANTARES_INSTR_RD    = slice(15, 10, -1) 
+ANTARES_INSTR_SHAMT = slice(10, 5, -1)
+ANTARES_INSTR_FUNCT = slice(5, None, -1) 
+ANTARES_INSTR_IMM16 = slice(15, None, -1) 
+ANTARES_INSTR_IMM26 = slice(25, None, -1) 
+
+OP_ADDI             = bitarray('001000')
+OP_ADDIU            = bitarray('001001')
+OP_ANDI             = bitarray('001100')
+OP_BEQ              = bitarray('000100')
+OP_BGTZ             = bitarray('000111')
+OP_BLEZ             = bitarray('000110')
+OP_BNE              = bitarray('000101')
+OP_J                = bitarray('000010')
+OP_JAL              = bitarray('000011')
+OP_LB               = bitarray('100000')
+OP_LBU              = bitarray('100100')
+OP_LH               = bitarray('100001')
+OP_LHU              = bitarray('100101')
+OP_LL               = bitarray('110000')
+OP_LUI              = bitarray('001111')
+OP_LW               = bitarray('100011')
+OP_ORI              = bitarray('001101')
+OP_SB               = bitarray('101000')
+OP_SC               = bitarray('111000')
+OP_SH               = bitarray('101001')
+OP_SLTI             = bitarray('001010')
+OP_SLTIU            = bitarray('001011')
+OP_SW               = bitarray('101011')
+OP_XORI             = bitarray('001110')
+
+OP_TYPE_I = [OP_ADDI, OP_ADDIU, OP_ANDI, OP_BEQ, OP_BGTZ, OP_BLEZ, OP_BNE, OP_LB, OP_LBU, OP_LH, OP_LHU, OP_LL, OP_LUI, OP_LW, OP_ORI, OP_SB, OP_SC, OP_SH, OP_SLTI, OP_SLTIU, OP_SW, OP_XORI]  
+
+OP_ARITH = [OP_ADDI, OP_ADDIU]
+OP_LOGIC = [OP_ANDI, OP_ORI, OP_XORI]
+OP_COMP = [OP_SLTI, OP_SLTIU] 
+
+OP_BRANCH = [OP_BEQ, OP_BGTZ, OP_BLEZ, OP_BNE]  
+OP_LD_ST = [OP_LB, OP_LBU, OP_LH, OP_LHU, OP_LL, OP_LUI, OP_LW, OP_SB, OP_SC, OP_SH, OP_SW] 
+
+OP_TYPE_J = [OP_J, OP_JAL]
+
+FUNCTION_OP_ADD     = bitarray('100000') 
+FUNCTION_OP_ADDU    = bitarray('100001')  
+FUNCTION_OP_AND     = bitarray('100100')  
+FUNCTION_OP_BREAK   = bitarray('001101')  
+FUNCTION_OP_DIV     = bitarray('011010')  
+FUNCTION_OP_DIVU    = bitarray('011011')  
+FUNCTION_OP_JALR    = bitarray('001001')  
+FUNCTION_OP_JR      = bitarray('001000')  
+FUNCTION_OP_MFHI    = bitarray('010000')  
+FUNCTION_OP_MFLO    = bitarray('010010')  
+FUNCTION_OP_MOVN    = bitarray('001011')  
+FUNCTION_OP_MOVZ    = bitarray('001010')  
+FUNCTION_OP_MTHI    = bitarray('010001')  
+FUNCTION_OP_MTLO    = bitarray('010011')  
+FUNCTION_OP_MULT    = bitarray('011000')  
+FUNCTION_OP_MULTU   = bitarray('011001')  
+FUNCTION_OP_NOR     = bitarray('100111')  
+FUNCTION_OP_OR      = bitarray('100101')  
+FUNCTION_OP_SLL     = bitarray('000000')  
+FUNCTION_OP_SLLV    = bitarray('000100')  
+FUNCTION_OP_SLT     = bitarray('101010')  
+FUNCTION_OP_SLTU    = bitarray('101011')  
+FUNCTION_OP_SRA     = bitarray('000011')  
+FUNCTION_OP_SRAV    = bitarray('000111')  
+FUNCTION_OP_SRL     = bitarray('000010')  
+FUNCTION_OP_SRLV    = bitarray('000110')  
+FUNCTION_OP_SUB     = bitarray('100010')  
+FUNCTION_OP_SUBU    = bitarray('100011')  
+FUNCTION_OP_SYSCALL = bitarray('001100')  
+FUNCTION_OP_TEQ     = bitarray('110100')  
+FUNCTION_OP_TGE     = bitarray('110000')  
+FUNCTION_OP_TGEU    = bitarray('110001')  
+FUNCTION_OP_TLT     = bitarray('110010')  
+FUNCTION_OP_TLTU    = bitarray('110011')  
+FUNCTION_OP_TNE     = bitarray('110110')  
+FUNCTION_OP_XOR     = bitarray('100110')  
+
+FUNCTION_OP_CLO     = bitarray('100001')
+FUNCTION_OP_CLZ     = bitarray('100000')
+FUNCTION_OP_MADD    = bitarray('000000')
+FUNCTION_OP_MADDU   = bitarray('000001')
+FUNCTION_OP_MSUB    = bitarray('000100')
+FUNCTION_OP_MSUBU   = bitarray('000101')
+
+FUNCTION_OP_TYPE_R = [FUNCTION_OP_ADD, FUNCTION_OP_ADDU, FUNCTION_OP_AND, FUNCTION_OP_BREAK, FUNCTION_OP_DIV, FUNCTION_OP_DIVU, FUNCTION_OP_JALR, FUNCTION_OP_JR, FUNCTION_OP_MFHI, FUNCTION_OP_MFLO, FUNCTION_OP_MOVN, FUNCTION_OP_MOVZ, FUNCTION_OP_MTHI, FUNCTION_OP_MTLO, FUNCTION_OP_MULT, FUNCTION_OP_MULTU, FUNCTION_OP_NOR, FUNCTION_OP_OR, FUNCTION_OP_SLL, FUNCTION_OP_SLLV, FUNCTION_OP_SLT, FUNCTION_OP_SLTU, FUNCTION_OP_SRA, FUNCTION_OP_SRAV, FUNCTION_OP_SRL, FUNCTION_OP_SRLV, FUNCTION_OP_SUB, FUNCTION_OP_SUBU, FUNCTION_OP_SYSCALL, FUNCTION_OP_TEQ, FUNCTION_OP_TGE, FUNCTION_OP_TGEU, FUNCTION_OP_TLT, FUNCTION_OP_TLTU, FUNCTION_OP_TNE, FUNCTION_OP_XOR]
+
+FUNCTION_OP_ARITH = [FUNCTION_OP_ADD, FUNCTION_OP_ADDU, FUNCTION_OP_SUB, FUNCTION_OP_SUBU, FUNCTION_OP_DIV, FUNCTION_OP_DIVU, FUNCTION_OP_MULT, FUNCTION_OP_MULTU]  
+FUNCTION_OP_LOGIC = [FUNCTION_OP_AND, FUNCTION_OP_NOR, FUNCTION_OP_OR, FUNCTION_OP_XOR]
+FUNCTION_OP_COMP = [FUNCTION_OP_SLT, FUNCTION_OP_SLTU] 
+FUNCTION_OP_SHIFT = [FUNCTION_OP_SLL, FUNCTION_OP_SLLV, FUNCTION_OP_SRA, FUNCTION_OP_SRAV, FUNCTION_OP_SRL, FUNCTION_OP_SRLV]  
+FUNCTION_OP_MOV = [FUNCTION_OP_MFHI, FUNCTION_OP_MFLO, FUNCTION_OP_MOVN, FUNCTION_OP_MOVZ, FUNCTION_OP_MTHI, FUNCTION_OP_MTLO] 
+
+FUNCTION_OP_J = [FUNCTION_OP_JALR, FUNCTION_OP_JR]  
